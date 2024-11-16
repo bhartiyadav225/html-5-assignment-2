@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <canvas id="circle" width="200" height="100" style="border:2px solid #000000;">
+        Sorry, your browser does not support canvas.
+        </canvas>
+        <script>
+       const  canvas = document.getElementById("circle");
+        const ct = canvas.getContext("2d");
+        ct.beginPath();
+        ct.arc(95,50,40,0,2*Math.PI);
+        ct.stroke();
+        </script>
+
+
+
+
+
+<canvas id="rectangle" width="280" height="160" style="border:2px solid black">
+    Sorry, your browser does not support canvas.
+    </canvas>
+    
+    <script>
+    const canvas= document.getElementById("rectangle");
+    const ctx = canvas.getContext("2d");
+    
+    ctx.rect(10, 10, 150, 100);
+    ctx.stroke();
+    </script> 
+    
+    
+
+
+
+
+
+    <canvas id="square" width="290" height="170" style="border:2px solid black"></canvas>
+
+<script>
+ c = document.getElementById("square");
+const tx = c.getContext("2d");
+
+tx.beginPath();
+tx.rect(40, 40, 170, 120);
+tx.stroke();
+</script>
+    
+
+</body>
+</html>
